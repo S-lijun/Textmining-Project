@@ -217,4 +217,6 @@ __marimo__/
 
 
 # project data
-/data/alfred/**/
+/data/*.json
+/data/*.7z
+!/data/alfred
