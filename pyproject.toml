@@ -9,7 +9,9 @@ dependencies = [
     # "torchvision",
     "sentence-transformers",
     "requests",
-    "py7zr>=1.1.0",
+    "py7zr",
+    "jupyter",
+    "ipykernel",
 ]
 
 [tool.uv.sources]

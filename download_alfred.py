@@ -40,7 +40,7 @@ for split in ["train", "valid_seen", "valid_unseen", "tests_seen", "tests_unseen
                 if task_desc:
                     extracted_data.append(
                         {
-                            "input": task_desc,
+                            "task": task_desc,
                             "label": task_type,
                             "path": str(json_file),
                             "high_descs": high_descs,
