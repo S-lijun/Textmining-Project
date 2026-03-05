@@ -36,12 +36,14 @@ for split in ["train", "valid_seen", "valid_unseen", "tests_seen", "tests_unseen
             annotations = data.get("turk_annotations", {}).get("anns", [])
             for ann in annotations:
                 task_desc = ann.get("task_desc")
+                high_descs = ann.get("high_descs")
                 if task_desc:
                     extracted_data.append(
                         {
                             "input": task_desc,
                             "label": task_type,
                             "path": str(json_file),
+                            "high_descs": high_descs,
                         }
                     )
     # Save the extracted data for the split
