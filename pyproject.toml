@@ -12,6 +12,12 @@ dependencies = [
     "py7zr",
     "jupyter",
     "ipykernel",
+    "accelerate",
+    "scikit-learn",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
 ]
 
 [tool.uv.sources]
